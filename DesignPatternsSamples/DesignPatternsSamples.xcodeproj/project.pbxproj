@@ -61,7 +61,7 @@
 				A151AF502987BE05000DA59A /* AppDelegate.swift */,
 				A151AF522987BE05000DA59A /* SceneDelegate.swift */,
 				A151AF542987BE05000DA59A /* ViewController.swift */,
-				A151AF642987C741000DA59A /* Singleton */,
+				A151AF642987C741000DA59A /* Singletone */,
 				A151AF562987BE05000DA59A /* Main.storyboard */,
 				A151AF592987BE06000DA59A /* Assets.xcassets */,
 				A151AF5B2987BE06000DA59A /* LaunchScreen.storyboard */,
@@ -70,12 +70,12 @@
 			path = DesignPatternsSamples;
 			sourceTree = "<group>";
 		};
-		A151AF642987C741000DA59A /* Singleton */ = {
+		A151AF642987C741000DA59A /* Singletone */ = {
 			isa = PBXGroup;
 			children = (
 				A151AF652987C794000DA59A /* AppSettings.swift */,
 			);
-			path = Singleton;
+			path = Singletone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
