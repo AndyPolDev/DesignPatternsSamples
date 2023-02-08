@@ -3,7 +3,7 @@
 import Foundation
 
 // 1. Создаем протокол - Упражнение. Описываем абстрактное упражнение
-protocol Exercise {
+protocol ExerciseProtocol {
     var name: String {get}
     var type: String {get}
     

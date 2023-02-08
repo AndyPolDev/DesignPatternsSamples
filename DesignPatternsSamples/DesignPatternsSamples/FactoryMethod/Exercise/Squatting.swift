@@ -2,7 +2,7 @@
 
 import Foundation
 
-class Squatting: Exercise {
+class Squatting: ExerciseProtocol {
     var name: String = "Приседания"
     
     var type: String = "Упражнения для ног"

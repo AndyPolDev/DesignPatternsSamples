@@ -3,7 +3,7 @@ import UIKit
 class FactoryViewController: UIViewController {
     
     // Cоздаем пустой массив упражнений
-    var exerciseArray = [Exercise]()
+    var exerciseArray = [ExerciseProtocol]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
