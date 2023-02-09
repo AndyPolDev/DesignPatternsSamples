@@ -32,6 +32,11 @@
 		A186281A2993AD2200DA2557 /* BedProductsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18628192993AD2200DA2557 /* BedProductsFactory.swift */; };
 		A186281C2993AF9B00DA2557 /* KitchenProductsFuctory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186281B2993AF9B00DA2557 /* KitchenProductsFuctory.swift */; };
 		A186281E2993B02100DA2557 /* BedForKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186281D2993B02100DA2557 /* BedForKitchen.swift */; };
+		A1936A9229950353003BA911 /* PrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1936A9129950353003BA911 /* PrototypeViewController.swift */; };
+		A1936A94299503D1003BA911 /* PersonFirstType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1936A93299503D1003BA911 /* PersonFirstType.swift */; };
+		A1936A96299506A2003BA911 /* PersonSecondType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1936A95299506A2003BA911 /* PersonSecondType.swift */; };
+		A1936A982995086B003BA911 /* PersonThirdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1936A972995086B003BA911 /* PersonThirdType.swift */; };
+		A1936A9A29950DDA003BA911 /* Extension + Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1936A9929950DDA003BA911 /* Extension + Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		A18628192993AD2200DA2557 /* BedProductsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedProductsFactory.swift; sourceTree = "<group>"; };
 		A186281B2993AF9B00DA2557 /* KitchenProductsFuctory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenProductsFuctory.swift; sourceTree = "<group>"; };
 		A186281D2993B02100DA2557 /* BedForKitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedForKitchen.swift; sourceTree = "<group>"; };
+		A1936A9129950353003BA911 /* PrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewController.swift; sourceTree = "<group>"; };
+		A1936A93299503D1003BA911 /* PersonFirstType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFirstType.swift; sourceTree = "<group>"; };
+		A1936A95299506A2003BA911 /* PersonSecondType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSecondType.swift; sourceTree = "<group>"; };
+		A1936A972995086B003BA911 /* PersonThirdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonThirdType.swift; sourceTree = "<group>"; };
+		A1936A9929950DDA003BA911 /* Extension + Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Array.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 				A151AF642987C741000DA59A /* Singletone */,
 				A16AD2DB29891E9A009D3265 /* FactoryMethod */,
 				A18627FF29939E5300DA2557 /* AbstractFactory */,
+				A1936A90299500E4003BA911 /* Prototype */,
 				A151AF562987BE05000DA59A /* Main.storyboard */,
 				A151AF592987BE06000DA59A /* Assets.xcassets */,
 				A151AF5B2987BE06000DA59A /* LaunchScreen.storyboard */,
@@ -204,6 +215,18 @@
 			path = AbstractFactories;
 			sourceTree = "<group>";
 		};
+		A1936A90299500E4003BA911 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				A1936A9129950353003BA911 /* PrototypeViewController.swift */,
+				A1936A93299503D1003BA911 /* PersonFirstType.swift */,
+				A1936A95299506A2003BA911 /* PersonSecondType.swift */,
+				A1936A972995086B003BA911 /* PersonThirdType.swift */,
+				A1936A9929950DDA003BA911 /* Extension + Array.swift */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,8 +302,10 @@
 				A18628142993A96F00DA2557 /* TableKitchen.swift in Sources */,
 				A18628172993AB8900DA2557 /* AbstractFactoryProtocol.swift in Sources */,
 				A18628062993A46C00DA2557 /* BedProtocol.swift in Sources */,
+				A1936A982995086B003BA911 /* PersonThirdType.swift in Sources */,
 				A18628042993A3AE00DA2557 /* ChairProtocol.swift in Sources */,
 				A186280E2993A72C00DA2557 /* TableBedroom.swift in Sources */,
+				A1936A94299503D1003BA911 /* PersonFirstType.swift in Sources */,
 				A151AF552987BE05000DA59A /* SingletoneViewController.swift in Sources */,
 				A16AD2E729892BBF009D3265 /* FactoryViewController.swift in Sources */,
 				A186280129939F9A00DA2557 /* AbstractFactoryViewController.swift in Sources */,
@@ -288,10 +313,13 @@
 				A186281E2993B02100DA2557 /* BedForKitchen.swift in Sources */,
 				A18628102993A8C400DA2557 /* BedForBedroom.swift in Sources */,
 				A16AD2E1298922E9009D3265 /* Squatting.swift in Sources */,
+				A1936A96299506A2003BA911 /* PersonSecondType.swift in Sources */,
 				A186281A2993AD2200DA2557 /* BedProductsFactory.swift in Sources */,
 				A16AD2DF298920DD009D3265 /* Jumping.swift in Sources */,
 				A186281C2993AF9B00DA2557 /* KitchenProductsFuctory.swift in Sources */,
 				A16AD2E4298924EE009D3265 /* FactoryExercises.swift in Sources */,
+				A1936A9229950353003BA911 /* PrototypeViewController.swift in Sources */,
+				A1936A9A29950DDA003BA911 /* Extension + Array.swift in Sources */,
 				A151AF512987BE05000DA59A /* AppDelegate.swift in Sources */,
 				A18628082993A4B600DA2557 /* TableProtocol.swift in Sources */,
 				A18628122993A93700DA2557 /* ChairKitchen.swift in Sources */,
