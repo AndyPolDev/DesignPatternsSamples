@@ -14,6 +14,13 @@
 		A151AF5A2987BE06000DA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A151AF592987BE06000DA59A /* Assets.xcassets */; };
 		A151AF5D2987BE06000DA59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A151AF5B2987BE06000DA59A /* LaunchScreen.storyboard */; };
 		A151AF662987C794000DA59A /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF652987C794000DA59A /* AppSettings.swift */; };
+		A166784E29965180007140D1 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166784D29965180007140D1 /* CatalogPresenter.swift */; };
+		A166785029965307007140D1 /* Description.strings in Resources */ = {isa = PBXBuildFile; fileRef = A166784F29965307007140D1 /* Description.strings */; };
+		A166785229965676007140D1 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785129965676007140D1 /* CatalogInteractor.swift */; };
+		A166785429965888007140D1 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785329965888007140D1 /* CatalogViewController.swift */; };
+		A166785629965B7A007140D1 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785529965B7A007140D1 /* ModuleBuilderProtocol.swift */; };
+		A166785829966011007140D1 /* CatalogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785729966011007140D1 /* CatalogBuilder.swift */; };
+		A166785A29966771007140D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785929966771007140D1 /* ViewController.swift */; };
 		A16AD2DD29891ECA009D3265 /* ExerciseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AD2DC29891ECA009D3265 /* ExerciseProtocol.swift */; };
 		A16AD2DF298920DD009D3265 /* Jumping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AD2DE298920DD009D3265 /* Jumping.swift */; };
 		A16AD2E1298922E9009D3265 /* Squatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AD2E0298922E9009D3265 /* Squatting.swift */; };
@@ -49,6 +56,13 @@
 		A151AF5C2987BE06000DA59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A151AF5E2987BE06000DA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A151AF652987C794000DA59A /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		A166784D29965180007140D1 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
+		A166784F29965307007140D1 /* Description.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Description.strings; sourceTree = "<group>"; };
+		A166785129965676007140D1 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
+		A166785329965888007140D1 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		A166785529965B7A007140D1 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
+		A166785729966011007140D1 /* CatalogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBuilder.swift; sourceTree = "<group>"; };
+		A166785929966771007140D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A16AD2DC29891ECA009D3265 /* ExerciseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProtocol.swift; sourceTree = "<group>"; };
 		A16AD2DE298920DD009D3265 /* Jumping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumping.swift; sourceTree = "<group>"; };
 		A16AD2E0298922E9009D3265 /* Squatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squatting.swift; sourceTree = "<group>"; };
@@ -110,6 +124,7 @@
 				A16AD2DB29891E9A009D3265 /* FactoryMethod */,
 				A18627FF29939E5300DA2557 /* AbstractFactory */,
 				A1936A90299500E4003BA911 /* Prototype */,
+				A166784B299650F7007140D1 /* Builder */,
 				A151AF562987BE05000DA59A /* Main.storyboard */,
 				A151AF592987BE06000DA59A /* Assets.xcassets */,
 				A151AF5B2987BE06000DA59A /* LaunchScreen.storyboard */,
@@ -125,6 +140,28 @@
 				A151AF652987C794000DA59A /* AppSettings.swift */,
 			);
 			path = Singletone;
+			sourceTree = "<group>";
+		};
+		A166784B299650F7007140D1 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A166784F29965307007140D1 /* Description.strings */,
+				A166785929966771007140D1 /* ViewController.swift */,
+				A166785529965B7A007140D1 /* ModuleBuilderProtocol.swift */,
+				A166784C29965139007140D1 /* Catalog */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A166784C29965139007140D1 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				A166785729966011007140D1 /* CatalogBuilder.swift */,
+				A166785329965888007140D1 /* CatalogViewController.swift */,
+				A166784D29965180007140D1 /* CatalogPresenter.swift */,
+				A166785129965676007140D1 /* CatalogInteractor.swift */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 		A16AD2DB29891E9A009D3265 /* FactoryMethod */ = {
@@ -288,6 +325,7 @@
 				A151AF5D2987BE06000DA59A /* LaunchScreen.storyboard in Resources */,
 				A151AF5A2987BE06000DA59A /* Assets.xcassets in Resources */,
 				A151AF582987BE05000DA59A /* Main.storyboard in Resources */,
+				A166785029965307007140D1 /* Description.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A166785429965888007140D1 /* CatalogViewController.swift in Sources */,
+				A166785229965676007140D1 /* CatalogInteractor.swift in Sources */,
 				A16AD2DD29891ECA009D3265 /* ExerciseProtocol.swift in Sources */,
 				A18628142993A96F00DA2557 /* TableKitchen.swift in Sources */,
 				A18628172993AB8900DA2557 /* AbstractFactoryProtocol.swift in Sources */,
@@ -310,7 +350,11 @@
 				A16AD2E729892BBF009D3265 /* FactoryViewController.swift in Sources */,
 				A186280129939F9A00DA2557 /* AbstractFactoryViewController.swift in Sources */,
 				A186280C2993A67100DA2557 /* ChairBadroom.swift in Sources */,
+				A166785629965B7A007140D1 /* ModuleBuilderProtocol.swift in Sources */,
+				A166785A29966771007140D1 /* ViewController.swift in Sources */,
+				A166784E29965180007140D1 /* CatalogPresenter.swift in Sources */,
 				A186281E2993B02100DA2557 /* BedForKitchen.swift in Sources */,
+				A166785829966011007140D1 /* CatalogBuilder.swift in Sources */,
 				A18628102993A8C400DA2557 /* BedForBedroom.swift in Sources */,
 				A16AD2E1298922E9009D3265 /* Squatting.swift in Sources */,
 				A1936A96299506A2003BA911 /* PersonSecondType.swift in Sources */,
