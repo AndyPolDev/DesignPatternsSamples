@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A113E326299E7EBF002B8BBB /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113E325299E7EBF002B8BBB /* GoogleAuth.swift */; };
+		A113E328299E9187002B8BBB /* TwitterAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113E327299E9187002B8BBB /* TwitterAuth.swift */; };
 		A151AF512987BE05000DA59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF502987BE05000DA59A /* AppDelegate.swift */; };
 		A151AF532987BE05000DA59A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF522987BE05000DA59A /* SceneDelegate.swift */; };
 		A151AF552987BE05000DA59A /* SingletoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF542987BE05000DA59A /* SingletoneViewController.swift */; };
@@ -22,6 +23,10 @@
 		A166785629965B7A007140D1 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785529965B7A007140D1 /* ModuleBuilderProtocol.swift */; };
 		A166785829966011007140D1 /* CatalogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785729966011007140D1 /* CatalogBuilder.swift */; };
 		A166785A29966771007140D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166785929966771007140D1 /* ViewController.swift */; };
+		A1684E35299E939C00FA2B0B /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1684E34299E939C00FA2B0B /* AuthenticationService.swift */; };
+		A1684E37299E96CC00FA2B0B /* GoogleAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1684E36299E96CC00FA2B0B /* GoogleAuthAdapter.swift */; };
+		A1684E39299E9F1500FA2B0B /* TwitterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1684E38299E9F1500FA2B0B /* TwitterAdapter.swift */; };
+		A1684E3B299EA0D000FA2B0B /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1684E3A299EA0D000FA2B0B /* AdapterViewController.swift */; };
 		A16AD2DD29891ECA009D3265 /* ExerciseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AD2DC29891ECA009D3265 /* ExerciseProtocol.swift */; };
 		A16AD2DF298920DD009D3265 /* Jumping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AD2DE298920DD009D3265 /* Jumping.swift */; };
 		A16AD2E1298922E9009D3265 /* Squatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AD2E0298922E9009D3265 /* Squatting.swift */; };
@@ -49,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		A113E325299E7EBF002B8BBB /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		A113E327299E9187002B8BBB /* TwitterAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuth.swift; sourceTree = "<group>"; };
 		A151AF4D2987BE05000DA59A /* DesignPatternsSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A151AF502987BE05000DA59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A151AF522987BE05000DA59A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 		A166785529965B7A007140D1 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		A166785729966011007140D1 /* CatalogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBuilder.swift; sourceTree = "<group>"; };
 		A166785929966771007140D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1684E34299E939C00FA2B0B /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		A1684E36299E96CC00FA2B0B /* GoogleAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthAdapter.swift; sourceTree = "<group>"; };
+		A1684E38299E9F1500FA2B0B /* TwitterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAdapter.swift; sourceTree = "<group>"; };
+		A1684E3A299EA0D000FA2B0B /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		A16AD2DC29891ECA009D3265 /* ExerciseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProtocol.swift; sourceTree = "<group>"; };
 		A16AD2DE298920DD009D3265 /* Jumping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumping.swift; sourceTree = "<group>"; };
 		A16AD2E0298922E9009D3265 /* Squatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squatting.swift; sourceTree = "<group>"; };
@@ -104,9 +114,22 @@
 		A113E324299E7E29002B8BBB /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				A113E325299E7EBF002B8BBB /* GoogleAuth.swift */,
+				A1684E3A299EA0D000FA2B0B /* AdapterViewController.swift */,
+				A1684E34299E939C00FA2B0B /* AuthenticationService.swift */,
+				A1684E36299E96CC00FA2B0B /* GoogleAuthAdapter.swift */,
+				A1684E38299E9F1500FA2B0B /* TwitterAdapter.swift */,
+				A113E329299E922C002B8BBB /* AuthLibs */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A113E329299E922C002B8BBB /* AuthLibs */ = {
+			isa = PBXGroup;
+			children = (
+				A113E327299E9187002B8BBB /* TwitterAuth.swift */,
+				A113E325299E7EBF002B8BBB /* GoogleAuth.swift */,
+			);
+			path = AuthLibs;
 			sourceTree = "<group>";
 		};
 		A151AF442987BE05000DA59A = {
@@ -348,8 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A166785429965888007140D1 /* CatalogViewController.swift in Sources */,
+				A1684E39299E9F1500FA2B0B /* TwitterAdapter.swift in Sources */,
 				A166785229965676007140D1 /* CatalogInteractor.swift in Sources */,
 				A16AD2DD29891ECA009D3265 /* ExerciseProtocol.swift in Sources */,
+				A1684E35299E939C00FA2B0B /* AuthenticationService.swift in Sources */,
 				A18628142993A96F00DA2557 /* TableKitchen.swift in Sources */,
 				A18628172993AB8900DA2557 /* AbstractFactoryProtocol.swift in Sources */,
 				A18628062993A46C00DA2557 /* BedProtocol.swift in Sources */,
@@ -364,7 +389,9 @@
 				A186280C2993A67100DA2557 /* ChairBadroom.swift in Sources */,
 				A166785629965B7A007140D1 /* ModuleBuilderProtocol.swift in Sources */,
 				A166785A29966771007140D1 /* ViewController.swift in Sources */,
+				A1684E37299E96CC00FA2B0B /* GoogleAuthAdapter.swift in Sources */,
 				A166784E29965180007140D1 /* CatalogPresenter.swift in Sources */,
+				A113E328299E9187002B8BBB /* TwitterAuth.swift in Sources */,
 				A186281E2993B02100DA2557 /* BedForKitchen.swift in Sources */,
 				A166785829966011007140D1 /* CatalogBuilder.swift in Sources */,
 				A18628102993A8C400DA2557 /* BedForBedroom.swift in Sources */,
@@ -381,6 +408,7 @@
 				A18628122993A93700DA2557 /* ChairKitchen.swift in Sources */,
 				A151AF662987C794000DA59A /* AppSettings.swift in Sources */,
 				A151AF532987BE05000DA59A /* SceneDelegate.swift in Sources */,
+				A1684E3B299EA0D000FA2B0B /* AdapterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
