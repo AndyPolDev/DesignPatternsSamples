@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A113E326299E7EBF002B8BBB /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113E325299E7EBF002B8BBB /* GoogleAuth.swift */; };
 		A151AF512987BE05000DA59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF502987BE05000DA59A /* AppDelegate.swift */; };
 		A151AF532987BE05000DA59A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF522987BE05000DA59A /* SceneDelegate.swift */; };
 		A151AF552987BE05000DA59A /* SingletoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151AF542987BE05000DA59A /* SingletoneViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A113E325299E7EBF002B8BBB /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
 		A151AF4D2987BE05000DA59A /* DesignPatternsSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A151AF502987BE05000DA59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A151AF522987BE05000DA59A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A113E324299E7E29002B8BBB /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A113E325299E7EBF002B8BBB /* GoogleAuth.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		A151AF442987BE05000DA59A = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 				A18627FF29939E5300DA2557 /* AbstractFactory */,
 				A1936A90299500E4003BA911 /* Prototype */,
 				A166784B299650F7007140D1 /* Builder */,
+				A113E324299E7E29002B8BBB /* Adapter */,
 				A151AF562987BE05000DA59A /* Main.storyboard */,
 				A151AF592987BE06000DA59A /* Assets.xcassets */,
 				A151AF5B2987BE06000DA59A /* LaunchScreen.storyboard */,
@@ -348,6 +359,7 @@
 				A1936A94299503D1003BA911 /* PersonFirstType.swift in Sources */,
 				A151AF552987BE05000DA59A /* SingletoneViewController.swift in Sources */,
 				A16AD2E729892BBF009D3265 /* FactoryViewController.swift in Sources */,
+				A113E326299E7EBF002B8BBB /* GoogleAuth.swift in Sources */,
 				A186280129939F9A00DA2557 /* AbstractFactoryViewController.swift in Sources */,
 				A186280C2993A67100DA2557 /* ChairBadroom.swift in Sources */,
 				A166785629965B7A007140D1 /* ModuleBuilderProtocol.swift in Sources */,
